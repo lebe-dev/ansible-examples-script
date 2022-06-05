@@ -35,25 +35,34 @@ $ ae systemd
 
 ## Install
 
-```shell
-paru -S html-xml-utils
-sudo pacman -S glow
-```
+1. Install `html-xml-utils` and `glow`:
 
-Use bundled `html2md` or build from sources (rust required):
+  ```shell
+  paru -S html-xml-utils
+  sudo pacman -S glow
+  ```
 
-```
-git clone https://gitlab.com/Kanedias/html2md.git
-cargo build --release
-```
+2. Install `html2md`:
+  Use bundled `html2md` or build from sources (rust required):
 
-Copy `ae.sh` in `~/bin` and append this path to `$PATH`.
+  ```
+  git clone https://gitlab.com/Kanedias/html2md.git
+  cargo build --release
+  ```
 
-Create alias in `~/.bashrc`:
+3. Install ansible example script:
 
-```bash
-alias ae="~/bin/ae.sh"
-```
+  Copy `ae.sh` in `~/bin` and append this path to `$PATH`.
+
+  ```shell
+  sudo cp html2md /usr/local/bin/
+  ```
+
+  Create alias in `~/.bashrc`:
+
+  ```bash
+  alias ae="~/bin/ae.sh"
+  ```
 
 ## How it works
 
