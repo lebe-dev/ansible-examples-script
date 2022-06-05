@@ -33,7 +33,7 @@ $ ae systemd
         state: reloaded
 ```
 
-## Install
+## Installation
 
 1. Install `html-xml-utils` and `glow`:
 
