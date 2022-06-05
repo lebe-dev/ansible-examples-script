@@ -5,7 +5,7 @@ Fetch module examples.
 ## Usage
 
 ```shell
-./ae systemd
+$ ae systemd
 
 
   ## Examples
