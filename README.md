@@ -66,3 +66,4 @@ alias ae="~/bin/ae.sh"
 ## Thanks
 
 - [Kanedias](https://gitlab.com/Kanedias) for [html2md](https://gitlab.com/Kanedias/html2md)
+- [Charm](https://github.com/charmbracelet) for [glow](https://github.com/charmbracelet/glow)
