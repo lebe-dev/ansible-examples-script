@@ -1,3 +1,14 @@
+- name: Install html-xml-utils
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - html-xml-utils
+    - glow
+  tags:
+    - ansible-examples
+    - ae
+
 - name: Create install path
   become: false
   file:
@@ -9,8 +20,8 @@
 
 - name: Copy ansible examples script
   become: false
-  copy:
-    src: ae.sh
+  template:
+    src: ae.sh.j2
     dest: "{{ ae_install_path }}/ae.sh"
     mode: "0750"
   tags:
